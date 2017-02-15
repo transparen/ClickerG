@@ -26,13 +26,14 @@ public class SplashScreen extends AbstractScreen{
 		
 	}
 
-
-	private void init() {
-		
+	protected void init() {
+		// TODO Auto-generated method stub
 		//TODO   implements better assets loading when game growss
-		splashImg = new Texture("badlogic.jpg");
-		
+				splashImg = new Texture("badlogic.jpg");
 	}
+	
+
+
 	
 	@Override
 	public void render(float delta) {
@@ -47,6 +48,10 @@ public class SplashScreen extends AbstractScreen{
 		spriteBatch.end();
 		
 	}
+
+
+
+
 	
 	
 

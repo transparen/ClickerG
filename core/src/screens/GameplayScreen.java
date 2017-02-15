@@ -8,13 +8,14 @@ public class GameplayScreen extends AbstractScreen{
 	private Player player;
 	public GameplayScreen(ClickerGame game) {
 		super(game);
-		init();
 	}
-
-	private void init() {
+	protected void init() {
 		initPlayer();
 		
 	}
+
+
+	
 
 	private void initPlayer() {
 		// TODO Auto-generated method stub
@@ -41,5 +42,9 @@ public class GameplayScreen extends AbstractScreen{
 		stage.act();
 	}
 
+
+
+	
+	
 	
 }
