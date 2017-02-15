@@ -40,6 +40,8 @@ public class GameplayScreen extends AbstractScreen {
 					int pointer, int button) {
 				System.out.println("click");
 				
+				player.reactOnClick();
+				
 				return super.touchDown(event, x, y, pointer, button);
 			}
 			
