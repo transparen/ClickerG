@@ -41,6 +41,8 @@ public class GameplayScreen extends AbstractScreen {
 				System.out.println("click");
 				
 				player.reactOnClick();
+				game.addPoint();
+				
 				
 				return super.touchDown(event, x, y, pointer, button);
 			}
@@ -60,10 +62,13 @@ public class GameplayScreen extends AbstractScreen {
 		super.render(delta);
 		update();
 
+		System.out.println("poitnts: " + game.getPoints());
+		
 		spriteBatch.begin();
 		stage.draw();
 
 		spriteBatch.end();
+		
 
 	}
 
